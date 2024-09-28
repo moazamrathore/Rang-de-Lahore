@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/cart.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <title>Rang-De-Lahore - Home</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="images/logo/logo.png" alt="Rang-De-Lahore Logo" />
+        <p>Rang-De-Lahore</p>
+      </div>
+
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+
+      <div class="auth">
+        <a href="cart.html"><img src="images/icons/cart.png" alt="Cart" /></a>
+        <a href="login.html"
+          ><img src="images/icons/profile-picture.png" alt="Login"
+        /></a>
+      </div>
+      <div class="menu">
+        <a><img src="images/icons/menu.png" alt="Menu" /></a>
+      </div>
+    </nav>
+
+    <section class="cart">
+      <table class="cart-table">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <img
+                src="https://lawrencepur.com/cdn/shop/files/1_32bbea38-9735-47fa-bb2b-84eaadcec1ce.jpg?v=1717519789&width=800"
+                alt="Item 1"
+                class="item-image"
+              />
+            </td>
+            <td>Samarkand Beige Melange Shalwar Kameez</td>
+            <td>PKR 7,790</td>
+            <td>
+              <input type="number" value="1" min="1" class="quantity-input" />
+            </td>
+            <td><button class="remove-btn">Remove</button></td>
+          </tr>
+          <tr>
+            <td>
+              <img
+                src="https://lawrencepur.com/cdn/shop/files/1_df30d0c6-044c-4d75-a0a9-97673a9bbd64.jpg?v=1720284601&width=800"
+                alt="Item 2"
+                class="item-image"
+              />
+            </td>
+            <td>Shalwar Kameez - Saltoro White Plain</td>
+            <td>PKR 10,740</td>
+            <td>
+              <input type="number" value="1" min="1" class="quantity-input" />
+            </td>
+            <td><button class="remove-btn">Remove</button></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="4">Total : PKR 18,530</td>
+            <td></td>
+          </tr>
+        </tfoot>
+      </table>
+      <div class="cart-actions">
+        <button class="checkout-btn">Proceed to Checkout</button>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="images/logo/logo.png" alt="" />
+        </div>
+        <div class="footer-links">
+          <a href="home.html">Home</a>
+          <a href="product.html">Product</a>
+          <a href="index.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="blog.html">Blog</a>
+        </div>
+        <div class="footer-contact">
+          <p>Email: rangdelahore@gmail.com</p>
+          <p>Phone: +92 315 1466795</p>
+          <p>Franchise: H-Block Phase-1 DHA Lahore</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Rang-De-Lahore. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

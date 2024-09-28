@@ -1,0 +1,124 @@
+main{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 10vh;
+    align-items: center;
+}
+
+main video {
+    height: 85vh;
+    width: 100vw;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.categories {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    margin-bottom: 2rem;
+}
+
+.categories p {
+    margin: 5vh 0;
+    font-size: 3.8vh;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.categories hr {
+    margin: 0 3vw;
+    width: 10vw;
+    height: 2px;
+    background-color: rgb(45, 45, 45);
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 18vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1rem;
+    text-align: center;
+}
+
+.card-content .price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.card-content .description {
+    font-size: 1rem;
+    color: #555;
+
+}
+
+
+@media only screen and (max-width: 882px) {
+.card-container {
+          
+            gap: 2.5rem;
+            padding: 1rem;
+    }
+
+.card {
+      
+        width: 40%;
+        
+    }
+
+        .card-content .price {
+            font-size: 1rem;
+        
+        }
+
+}
+@media only screen and (max-width: 580px) {
+.card-container {
+          
+            gap: 2.5rem;
+            padding: 1rem;
+    }
+
+.card {
+      
+        width: 80%;
+        
+    }
+
+        .card-content .price {
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+}
